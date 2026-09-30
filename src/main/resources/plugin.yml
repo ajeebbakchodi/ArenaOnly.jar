@@ -1,0 +1,17 @@
+name: ArenaOnly
+version: '${project.version}'
+main: dev.arenaonly.ArenaOnly
+api-version: '1.21'
+description: Restricts duel commands to specific worlds for non-operators.
+commands:
+  arenaonly:
+    description: Reload the ArenaOnly config
+    usage: /arenaonly reload
+    permission: arenaonly.admin
+permissions:
+  arenaonly.bypass:
+    description: Use restricted commands in any world
+    default: op
+  arenaonly.admin:
+    description: Use /arenaonly reload
+    default: op

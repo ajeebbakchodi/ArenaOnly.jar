@@ -1,0 +1,18 @@
+# Worlds where the restricted commands ARE allowed (Multiverse world names, case-insensitive)
+allowed-worlds:
+  - arena
+
+# Commands to restrict everywhere except the allowed worlds.
+# No slash. Plugin prefixes like "somePlugin:duel" are handled automatically.
+# Aliases are detected too, but add extra ones here if your duel plugin uses odd names.
+blocked-commands:
+  - duel
+  - duels
+  - 1v1
+
+# Players with this permission (ops by default) ignore all restrictions
+bypass-permission: arenaonly.bypass
+
+# Message shown when a command is blocked. Supports & color codes.
+# %world% = the arena world name(s) they should go to
+deny-message: "&cDuels only work in the arena world! Go to &e%world%&c first."
